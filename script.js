@@ -4,7 +4,8 @@ var city = document.querySelector('.city')
 var desc = document.querySelector('.desc')
 var temp = document.querySelector('.temp')
 var APIKey = "c8f8c0dc99abc022e07170e47874a788";
-var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+var cityName = document.querySelector('.inputValue');
+var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
 
 button.addEventListener('click',function(){
     fetch(queryURL)
